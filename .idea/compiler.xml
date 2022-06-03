@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="chatbot-api-ensim" />
+        <module name="TelegramSpringAPI" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TelegramSpringAPI" options="-parameters" />
       <module name="chatbot-api-ensim" options="-parameters" />
     </option>
   </component>

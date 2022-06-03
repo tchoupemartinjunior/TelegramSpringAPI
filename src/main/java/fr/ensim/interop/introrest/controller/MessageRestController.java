@@ -62,9 +62,9 @@ public String getMeteo(){
 		return messageMeteo;
 	}
 
-	else if(message_recu.equals("Joke")){
+	else if(message_recu.equalsIgnoreCase("Joke")){
 		Joke blague = JokeController.getRandomJoke().getBody();
-		messageMeteo = blague.getTitre()+'\n'+blague.getTexte();
+		messageMeteo = blague.getTitre()+'\n'+blague.getTexte()+"\n Rate: "+blague.getRate()+"étoiles.";
 		sendMessage(messageMeteo);
 	}
 	return "Aucun raitement associé a ce message";
