@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class OpenWeatherRestController {
 	
-	private final static String API_KEY="b2b3b6b151a17c4dd3116efaa51a52b9";
+	private final static String API_KEY=******************;
 
 	@GetMapping(value = "/meteo", params = {"lat", "long"})
 	public static ResponseEntity<OpenWeather> meteo(
