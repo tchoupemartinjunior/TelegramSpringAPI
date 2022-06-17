@@ -17,7 +17,7 @@ public class MessageRestController {
 	public Double temp;
 	public static String messageMeteo;
 	public String ville;
-	public Long CHATID = 5405543053L;
+	public Long CHATID = ******;
 	//public int offset;
 
 
@@ -135,6 +135,6 @@ public MeteoMsg sendMeteoData(){
 
 	}
 
-
+	//5405543053L
 	//Opérations sur la ressource Message
 }
