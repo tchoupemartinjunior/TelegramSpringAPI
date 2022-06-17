@@ -37,6 +37,16 @@ public class OpenWeatherRestController {
 		return meteo(lat.toString(),lng.toString());
 
 	}
+	@GetMapping(value = "/meteo/forecast")
+	public static ResponseEntity<OpenWeather> meteoVilleForecast(
+			@RequestParam("ville") String nomVille)  {
+		City infoVille = getCoord(nomVille).getBody();
+		Double lat = infoVille.getLat();
+		Double lng = infoVille.getLon();
+
+		return meteoForeCast(lat.toString(),lng.toString());
+
+	}
 
 	@GetMapping("/position")
 	public static ResponseEntity<City> getCoord(
@@ -51,5 +61,19 @@ public class OpenWeatherRestController {
 
 		return ResponseEntity.ok().body(city);
 	}
+
+	@GetMapping(value = "/meteo/", params = {"lat", "long"})
+	public static ResponseEntity<OpenWeather> meteoForeCast(
+			@RequestParam("lat") String lat,
+			@RequestParam("long") String longitude) {
+
+		RestTemplate restTemplate = new RestTemplate();
+		OpenWeather openWeather = restTemplate.getForObject("http://api.openweathermap.org/data/2.5/forecast/daily?lat={lat}"+"&lon={longitude}&cnt=10&appid="
+						+ API_KEY,
+				OpenWeather.class, lat, longitude);
+
+		return ResponseEntity.ok().body(openWeather);
+	}
+
 
 }

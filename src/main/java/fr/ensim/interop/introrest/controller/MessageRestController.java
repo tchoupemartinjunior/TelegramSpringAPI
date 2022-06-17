@@ -18,6 +18,8 @@ public class MessageRestController {
 	public static String messageMeteo;
 	public String ville;
 	public Long CHATID = 5405543053L;
+	//public int offset;
+
 
 	@Value("${telegram.api.url}")
 	private String telegramApiUrl;
@@ -28,10 +30,19 @@ public class MessageRestController {
 
 
 	public void listen(){
+
+		/*resultSize =  responseEntity.getBody().getResult().size();
+		if(resultSize<=0||resultSize==null){offset=-1;}
+		else{
+			offset = responseEntity.getBody().getResult().get(resultSize).getUpdateId();
+		}*/
+		//int offset=-1;
 		RestTemplate restTemplate = new RestTemplate();
 		responseEntity = restTemplate.getForEntity("https://api.telegram.org/bot5582335341:AAFVu90WyAdTIQUixHvtzgJzeyejBXT3n8w/getUpdates?offset=-1", ApiResponseUpdateTelegram .class);
 		message_recu=responseEntity.getBody().getResult().get(0).getMessage().getText();
 		System.out.println(responseEntity.getBody().getResult().get(0).getMessage().getText());
+
+
 
 	}
 public String getMeteo(){
@@ -45,7 +56,6 @@ public String getMeteo(){
 		System.out.println(weatherDescription+' '+temp);
 		messageMeteo = "Weather in Le Mans"+'\n'+weatherDescription+'\n'+temp+ "°C";
 		sendMeteoData();
-		System.out.println("ffffffffff");
 		return messageMeteo;
 	}
 
@@ -62,13 +72,39 @@ public String getMeteo(){
 		return messageMeteo;
 	}
 
-	else if(message_recu.equals("Joke")){
+	else if(message_recu.equalsIgnoreCase("joke")){
 		Joke blague = JokeController.getRandomJoke().getBody();
 		messageMeteo = blague.getTitre()+'\n'+blague.getTexte();
 		sendMessage(messageMeteo);
 	}
-	return "Aucun raitement associé a ce message";
+	else if(message_recu.equalsIgnoreCase("bad joke")){
+		Joke blague = JokeController.getBadJoke().getBody();
+		messageMeteo = "Bad Joke \n\n"+blague.getTitre()+'\n'+blague.getTexte();
+		sendMessage(messageMeteo);
+	}
+	else if(message_recu.equalsIgnoreCase("good joke")){
+		Joke blague = JokeController.getGoodJoke().getBody();
+		messageMeteo =  "GoodJoke \n\n"+blague.getTitre()+'\n'+blague.getTexte();
+		sendMessage(messageMeteo);
+	}
+
+	else if(message_recu.equalsIgnoreCase("meteo forecast")){
+		ville = message_recu.substring(13);
+		OpenWeatherRestController.meteoVille(ville);
+		OpenWeather res = OpenWeatherRestController.meteoVille(ville).getBody();
+		weatherDescription = res.getWeather().get(0).getMain();
+		temp = res.getMain().getTemp();
+		System.out.println(weatherDescription+' '+temp);
+		messageMeteo = "Weather in "+ville+'\n'+weatherDescription+'\n'+temp+ "°C";
+		sendMeteoData();
+		//System.out.println(ville);
+		return messageMeteo;
+	}
+	//sendMessage("Aucun traitement associé a ce message");
+	return messageMeteo;
+
 }
+
 
 public MeteoMsg sendMeteoData(){
 	RestTemplate restTemplate = new RestTemplate();

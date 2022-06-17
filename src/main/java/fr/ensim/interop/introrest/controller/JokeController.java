@@ -14,4 +14,14 @@ public class JokeController {
     public static ResponseEntity<Joke> getRandomJoke(){
         return JokeService.getRandomJoke();
     }
+
+    @GetMapping("/goodjoke")
+    public static ResponseEntity<Joke> getGoodJoke(){
+        return JokeService.getRandomJoke();
+    }
+
+    @GetMapping("/badjoke")
+    public static ResponseEntity<Joke> getBadJoke(){
+        return JokeService.getRandomJoke();
+    }
 }

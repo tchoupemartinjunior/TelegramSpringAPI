@@ -7,11 +7,14 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 @Service
 public class JokeService {
     private static HashMap<Integer, Joke> mapper = new HashMap<Integer, Joke>();
+    private static HashMap<Integer, Joke> goodJoke = new HashMap<Integer, Joke>();
+    private static HashMap<Integer, Joke> badJoke = new HashMap<Integer, Joke>();
     private static int nbJoke =0;
 
 
@@ -19,10 +22,19 @@ public class JokeService {
 
     @PostConstruct
     public void initJokeList(){
-        save(new Joke(0,"Que demande un footballeur à son coiffeur ?\n","La coupe du monde s’il vous plait"));
-        save(new Joke(1,"Pourquoi les canards sont toujours à l'heure ?\n","Parce qu’ils sont dans l’étang"));
-        save(new Joke(2,"Pourquoi les pêcheurs ne sont pas gros ?\n","Parce qu’ils surveillent leur ligne."));
-        save(new Joke(3,"Qu'est-ce qui n'est pas un steak ?\n","Une pastèque."));
+        save(new Joke(0,"Que demande un footballeur à son coiffeur ?\n","La coupe du monde s’il vous plait",2));
+        save(new Joke(1,"Pourquoi les canards sont toujours à l'heure ?\n","Parce qu’ils sont dans l’étang",1));
+        save(new Joke(2,"Pourquoi les pêcheurs ne sont pas gros ?\n","Parce qu’ils surveillent leur ligne.",4));
+        save(new Joke(3,"Qu'est-ce qui n'est pas un steak ?\n","Une pastèque.",8));
+        save(new Joke(4,"C'est l'histoire d'un poil.\n","Avant il était bien, maintenant il est pubien.",3));
+        save(new Joke(5,"Pourquoi un chasseur emmène-t-il son fusil aux toilettes ?\n" ,"Pour tirer la chasse.",9));
+        save(new Joke(6,"Pourquoi est-ce que Napoléon n'a pas voulu acheter de maison ?\n","Parce qu'il avait deja un Bonaparte",1));
+        save(new Joke(7,"Quel est l'animal le plus connecté?\n","Le porc USB",0 ));
+        save(new Joke(8,"Que dit un informaticien quand il s'ennuie ?\n"," Je me fichier",9));
+        save(new Joke(9,"Que fait un geek quand il descend du métro ?\n","Il libère la RAMe",3));
+        save(new Joke(10,"Que fait un geek qui a peur ?\n","Il URL",2));
+        save(new Joke(11,"Qu'est-ce qui est jaune et qui fait 'crac crac' ?\n","Un poussin qui mange des chips.",5));
+
     }
 
     public static ResponseEntity<Joke> save(Joke blague){
@@ -44,6 +56,36 @@ public class JokeService {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok().body(mapper.get(nombreAleatoire));
+    }
+
+    public static ResponseEntity<Joke> getGoodJoke(){
+        for (int i =0;i< mapper.size();i++)
+            if(mapper.get(i).getRate()>=5){
+                goodJoke.put(i,mapper.get(i));
+            }
+        int min = 0;
+        int max = goodJoke.size();
+        Random random = new Random();
+        int nombreAleatoire = random.nextInt(max + min) + min;
+        if(!goodJoke.containsKey(nombreAleatoire)){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().body(goodJoke.get(nombreAleatoire));
+    }
+
+    public static ResponseEntity<Joke> getBadJoke(){
+        for (int i =0;i< mapper.size();i++)
+            if(mapper.get(i).getRate()<5){
+                badJoke.put(i,mapper.get(i));
+            }
+        int min = 0;
+        int max = badJoke.size();
+        Random random = new Random();
+        int nombreAleatoire = random.nextInt(max + min) + min;
+        if(!badJoke.containsKey(nombreAleatoire)){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().body(badJoke.get(nombreAleatoire));
     }
 
 

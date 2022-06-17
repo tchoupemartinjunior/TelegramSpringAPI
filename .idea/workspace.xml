@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71fa8bc3-74d0-464c-a3a0-f24878b7010f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-ensim.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/JokeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/MessageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/MessageRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/OpenWeatherRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/OpenWeatherRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/model/telegram/model/Joke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/model/telegram/model/Joke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/service/JokeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/service/JokeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/ChatBotApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/ListenerUpdateTelegram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/client/ClientRestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/JokeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/MessageRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/OpenWeatherRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Audio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/BotApiObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatInviteLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatJoinRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatLocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatMemberUpdated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPermissions$ChatPermissionsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPermissions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPhoto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Document.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/MessageEntity$MessageEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/MessageEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/PhotoSize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ResponseParameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/GeoCodeResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Joke.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/OpenWeather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/ApiResponseTelegram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/ApiResponseUpdateTelegram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/MeteoMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/Update.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/getMeteoTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/service/JokeService.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29vAd1M57lOpx4TK6PZ0yhbT1xn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/model/telegram" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tchou\Downloads\chatbot-api-ensim\chatbot-api-ensim\src\main\java\fr\ensim\interop\introrest\model\telegram" />
+      <recent name="C:\Users\tchou\Downloads\chatbot-api-ensim\chatbot-api-ensim\src\main\java\fr\ensim\interop\introrest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.ensim.interop.introrest.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChatBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chatbot-api-ensim" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.ensim.interop.introrest.ChatBotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71fa8bc3-74d0-464c-a3a0-f24878b7010f" name="Changes" comment="" />
+      <created>1653983273731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653983273731</updated>
+      <workItem from="1653983275405" duration="6117000" />
+      <workItem from="1654008618446" duration="17131000" />
+      <workItem from="1654191914634" duration="5949000" />
+      <workItem from="1654237808160" duration="745000" />
+      <workItem from="1654238601596" duration="579000" />
+      <workItem from="1654239237159" duration="8022000" />
+      <workItem from="1654247409920" duration="597000" />
+      <workItem from="1654844694254" duration="688000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
