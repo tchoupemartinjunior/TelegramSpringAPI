@@ -5,58 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71fa8bc3-74d0-464c-a3a0-f24878b7010f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-ensim.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/JokeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/MessageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/MessageRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/OpenWeatherRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/controller/OpenWeatherRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/model/telegram/model/Joke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/model/telegram/model/Joke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/service/JokeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensim/interop/introrest/service/JokeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/ChatBotApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/ListenerUpdateTelegram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/client/ClientRestTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/JokeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/MessageRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/controller/OpenWeatherRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Audio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/BotApiObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatInviteLink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatJoinRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatLocation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatMemberUpdated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPermissions$ChatPermissionsBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPermissions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ChatPhoto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/MessageEntity$MessageEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/MessageEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/PhotoSize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/ResponseParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/Video.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/GeoCodeResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Joke.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/OpenWeather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/model/Weather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/ApiResponseTelegram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/ApiResponseUpdateTelegram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/MeteoMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/Update.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/model/telegram/utilitaire/getMeteoTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/ensim/interop/introrest/service/JokeService.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitIgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBot.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,8 +73,8 @@
   </component>
   <component name="RunManager">
     <configuration name="ChatBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="chatbot-api-ensim" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.ensim.interop.introrest.ChatBotApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +96,7 @@
       <workItem from="1654239237159" duration="8022000" />
       <workItem from="1654247409920" duration="597000" />
       <workItem from="1654844694254" duration="688000" />
+      <workItem from="1655463009534" duration="437000" />
     </task>
     <servers />
   </component>
